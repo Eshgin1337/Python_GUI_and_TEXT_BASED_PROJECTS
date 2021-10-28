@@ -8,7 +8,7 @@ auth_token = os.environ['TWILIO_AUTH_TOKEN']
 my_data = {
     "lat": 44.723660,
     "lon": 37.769508,
-    "appid": "97a89f7cf2a41f687354a111d52524f5",
+    "appid": "YOUR_APP_ID",
     "exclude": "current,minutely,daily"
 }
 data = requests.get(url="https://api.openweathermap.org/data/2.5/onecall", params=my_data)
@@ -19,4 +19,3 @@ for i in range(12):
     if hourly_data[i]["weather"][0]["id"] < 700:
         print("Bring an umbrella")
         break
-variable = "BE8IkaGy12z4wpjUSPpiPOHCoE0Ep6KuLLeAqaal"t
